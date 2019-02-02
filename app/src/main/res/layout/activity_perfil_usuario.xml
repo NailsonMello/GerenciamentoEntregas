@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6e189b04"
+    tools:context="com.exemplo.nailson.safad.PerfilUsuario">
+
+
+    <ImageView
+        android:id="@+id/imagemPerfil"
+        android:layout_width="match_parent"
+        android:layout_marginTop="2dp"
+        android:layout_height="220dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/default_avatar" />
+    <FrameLayout
+        android:id="@+id/frameUser"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:visibility="gone"
+        android:layout_alignEnd="@+id/imagemPerfil"
+        android:layout_alignBottom="@+id/imagemPerfil"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/btn_editar">
+    <ImageView
+        android:id="@+id/editarFoto"
+        android:visibility="gone"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/ic_camera"
+        />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/relPerfil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/imagemPerfil">
+        <TextView
+            android:id="@+id/nomePerfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:layout_marginRight="10dp"
+            android:text="Nome"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:textSize="30sp" />
+        <TextView
+            android:id="@+id/sobrePerfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/nomePerfil"
+            android:layout_marginTop="26dp"
+            android:text="Sobrenome"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:textSize="30sp" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/telPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relPerfil"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:text="Telefone"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/emailperfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="12dp"
+        android:text="Email"
+        android:layout_below="@+id/telPerfil"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+</RelativeLayout>

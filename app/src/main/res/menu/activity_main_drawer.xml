@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_login"
+            android:icon="@drawable/ic_login"
+            android:title="Login" />
+        <item
+            android:id="@+id/nav_chat"
+            android:icon="@drawable/ic_chat"
+            android:title="Conversas" />
+        <item
+            android:id="@+id/nav_minha_conta"
+            android:icon="@drawable/ic_conta"
+            android:title="Minha Conta" />
+
+        <item
+            android:id="@+id/nav_cadastrar_user"
+            android:icon="@drawable/ic_novo_user"
+            android:title="Novo usuario" />
+
+        <item
+            android:id="@+id/nav_vendas"
+            android:icon="@drawable/ic_money"
+            android:title="Vendas" />
+
+    </group>
+
+    <item android:title="Sair"
+        android:icon="@drawable/ic_sair"
+        android:id="@+id/nav_sair"
+        />
+
+</menu>

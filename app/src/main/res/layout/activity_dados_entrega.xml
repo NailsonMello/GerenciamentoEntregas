@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.exemplo.nailson.safad.DadosEntrega">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:paddingBottom="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="4dp"
+            android:layout_marginBottom="10dp"
+            >
+            <ImageView
+                android:id="@+id/emrota"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="50"
+                android:src="@drawable/carrota"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/emrota"/>
+            <ImageView
+                android:id="@+id/proximanota"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/proxrota"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/proxima"/>
+            <ImageView
+                android:id="@+id/entregafeita"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/feita"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/realizada"/>
+            <ImageView
+                android:id="@+id/aguardando"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/aguardar"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/aguardando"/>
+            <ImageView
+                android:id="@+id/clientedevolveu"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/devolvelnota"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/devolveu"/>
+            <ImageView
+                android:id="@+id/naodeutempo"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/naodeutempo"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/tempo"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="45"
+                android:layout_gravity="center"
+                android:text="Código:"/>
+            <TextView
+                android:id="@+id/entregacodigo"
+                android:layout_width="match_parent"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:maxLength="4"
+                android:layout_height="wrap_content"
+                android:layout_weight="47"
+                android:text="codigo"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:layout_marginLeft="7dp"
+                android:layout_gravity="center"
+                android:text="Nota:"/>
+            <TextView
+                android:id="@+id/entreganfe"
+                android:layout_width="match_parent"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_weight="34"
+                android:layout_marginLeft="5dp"
+                android:layout_height="wrap_content"
+                android:text="danfe"/>
+
+        </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="45"
+                android:layout_gravity="center"
+                android:text="Cliente:"/>
+            <TextView
+                android:id="@+id/entregafantasia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="14"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:text="fantasia"/>
+        <View
+            android:id="@+id/separadorView"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:background="@color/common_google_signin_btn_text_dark_disabled" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="45"
+                android:layout_gravity="center"
+                android:text="Endereço:"/>
+            <TextView
+                android:id="@+id/entregaend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_weight="14"
+                android:textSize="20sp"
+                android:text="Endereço"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:background="@color/common_google_signin_btn_text_dark_disabled" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="45"
+                android:layout_gravity="center"
+                android:text="Vendedor:"/>
+
+            <TextView
+                android:id="@+id/entregavendedor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:maxLines="1"
+                android:layout_weight="14"
+                android:text="vendedor"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:background="@color/common_google_signin_btn_text_dark_disabled" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="45"
+                android:text="Status:" />
+
+
+            <TextView
+                android:id="@+id/entregastatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="14"
+                android:maxLines="1"
+                android:text="status"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:background="@color/common_google_signin_btn_text_dark_disabled" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="45"
+                android:layout_gravity="center"
+                android:text="Entregador:"/>
+
+            <TextView
+                android:id="@+id/entregamotorista"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_weight="14"
+                android:text="motorista"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:background="@color/common_google_signin_btn_text_dark_disabled" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="45"
+                android:layout_gravity="center"
+                android:text="Motorista:"/>
+
+            <TextView
+                android:id="@+id/entregaentregador"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:maxLines="1"
+                android:layout_weight="14"
+                android:text="entregador"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:background="@color/common_google_signin_btn_text_dark_disabled" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="45"
+                android:layout_gravity="center"
+                android:text="Data:"/>
+
+
+            <TextView
+                android:id="@+id/entregadata"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_weight="14"
+                android:textSize="20sp"
+                android:maxLines="1"
+                android:text="data"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:background="@color/common_google_signin_btn_text_dark_disabled" />
+
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="45"
+                android:layout_gravity="center"
+                android:text="Chegou:"/>
+
+            <TextView
+                android:id="@+id/horaEntrada"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_weight="14"
+                android:textSize="20sp"
+                android:maxLines="1"
+                android:text="Chegou"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:background="@color/common_google_signin_btn_text_dark_disabled" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="45"
+                android:layout_gravity="center"
+                android:text="Saiu:"/>
+
+
+            <TextView
+                android:id="@+id/horaSaida"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_weight="14"
+                android:textSize="20sp"
+                android:maxLines="1"
+                android:text="Saida"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:background="@color/common_google_signin_btn_text_dark_disabled" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:text="Detalhes da entrega:"/>
+
+        <TextView
+            android:id="@+id/entregaocorrencio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginTop="3dp"
+            android:textSize="22sp"
+            android:layout_marginBottom="15dp"
+            android:text="Sem detalhes"/>
+        <Button
+            android:id="@+id/btnMudar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="05dp"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:visibility="gone"
+            android:background="@drawable/botao_entrar_style"
+            android:text="Entrega Antiga"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            />
+
+        <TextView
+            android:id="@+id/id_userr"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="invisible"/>
+    </LinearLayout>
+</ScrollView>

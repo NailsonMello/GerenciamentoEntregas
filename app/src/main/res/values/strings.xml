@@ -1,0 +1,76 @@
+<resources>
+    <string name="app_name">Roma Logistica</string>
+    <string name="default_notification_channel_id">Nova Notificação</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string-array name="carro">
+        <item>Kombi</item>
+        <item>Fiorino</item>
+        <item>Master</item>
+        <item>HR Hyundai</item>
+    </string-array>
+
+    <string-array name="status">
+        <item>Em Rota</item>
+        <item>Próxima Entrega</item>
+        <item>Entrega realizada</item>
+        <item>Aguardando Cliente</item>
+        <item>Não deu tempo</item>
+        <item>Cliente devolveu</item>
+    </string-array>
+
+    <string-array name="vendedores">
+        <item>102-MAGALI</item>
+        <item>108-SHEILA</item>
+        <item>146-ROSANGELA</item>
+        <item>169-PATRICIA</item>
+        <item>181-JOISE</item>
+        <item>189-FABIOLA MIRANDA</item>
+        <item>190-JOSE CARLOS</item>
+        <item>191-JOSANE</item>
+        <item>192-ANDRE LUIS</item>
+    </string-array>
+
+    <string-array name="entregadores">
+        <item>Jailton</item>
+        <item>Luis</item>
+        <item>Leo</item>
+        <item>Outro</item>
+    </string-array>
+
+    <string-array name="estados">
+        <item>"Estado"</item>
+        <item>"Acre (AC)"</item>
+        <item>"Alagoas (AL)"</item>
+        <item>"Amapá (AP)"</item>
+        <item>"Amazonas (AM)"</item>
+        <item>"Bahia (BA)"</item>
+        <item>"Ceará (CE)"</item>
+        <item>"Distrito Federal (DF)"</item>
+        <item>"Espírito Santo (ES)"</item>
+        <item>"Goiás (GO)"</item>
+        <item>"Maranhão (MA)"</item>
+        <item>"Mato Grosso (MT)"</item>
+        <item>"Mato Grosso do Sul (MS)"</item>
+        <item>"Minas Gerais (MG)"</item>
+        <item>"Pará (PA)"</item>
+        <item>"Paraíba (PB)"</item>
+        <item>"Paraná (PR)"</item>
+        <item>"Pernambuco (PE)"</item>
+        <item>"Piauí (PI)"</item>
+        <item>"Rio de Janeiro (RJ)"</item>
+        <item>"Rio Grande do Norte (RN)"</item>
+        <item>"Rio Grande do Sul (RS)"</item>
+        <item>"Rondônia (RO)"</item>
+        <item>"Roraima (RR)"</item>
+        <item>"Santa Catarina (SC)"</item>
+        <item>"São Paulo (SP)"</item>
+        <item>"Sergipe (SE)"</item>
+        <item>"Tocantins (TO)"</item>
+    </string-array>
+    <string name="title_activity_map_tracking">Map</string>
+    <string name="title_activity_maps">Map</string>
+
+
+</resources>
